@@ -15,9 +15,13 @@ export default function Courses() {
             Course 1234 
           </h2> 
           <hr />
+
           <div className="d-flex">
             <div className="d-none d-md-block">
               <CoursesNavigation />
+            </div>
+
+            <div className="flex-fill">
               <Routes>
                 <Route path="/" element={<Navigate to="Home" />} />
                 <Route path="Home" element={<Home />} />

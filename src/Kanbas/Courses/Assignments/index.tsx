@@ -24,7 +24,12 @@ export default function Assignments() {
                   <BsGripVertical className="me-2 fs-3" />
                   <PiNotebookDuotone className="text-success me-3 fs-3"/>
                   <div className = "d-flex flex-column">
-                    <p className="fs-4">A1</p>
+                    <p className="fs-4">
+                      <a className="wd-assignment-link text-dark text-decoration-none"
+                      href="#/Kanbas/Courses/1234/Assignments/123">
+                        A1
+                      </a>
+                    </p>
                     <p className="fs-6"> 
                       <span className="text-danger">Multiple Modules</span>&nbsp;
                       | <span className="fw-bold">Not available until</span> May 6 at 12:00am 
@@ -41,7 +46,12 @@ export default function Assignments() {
                   <BsGripVertical className="me-2 fs-3" />
                   <PiNotebookDuotone className="text-success me-3 fs-3"/>
                   <div className = "d-flex flex-column">
-                    <p className="fs-4">A2</p>
+                    <p className="fs-4">
+                      <a className="wd-assignment-link text-dark text-decoration-none"
+                        href="#/Kanbas/Courses/1234/Assignments/123">
+                          A2
+                      </a>
+                    </p>
                     <p className="fs-6"> 
                       <span className="text-danger">Multiple Modules</span>&nbsp;
                       | <span className="fw-bold">Not available until</span> May 13 at 12:00am 
@@ -58,7 +68,12 @@ export default function Assignments() {
                   <BsGripVertical className="me-2 fs-3" />
                   <PiNotebookDuotone className="text-success me-3 fs-3"/>
                   <div className = "d-flex flex-column">
-                    <p className="fs-4">A3</p>
+                    <p className="fs-4">
+                      <a className="wd-assignment-link text-dark text-decoration-none"
+                      href="#/Kanbas/Courses/1234/Assignments/123">
+                        A3
+                      </a>
+                    </p>
                     <p className="fs-6"> 
                       <span className="text-danger">Multiple Modules</span>&nbsp;
                       | <span className="fw-bold">Not available until</span> May 20 at 12:00am 

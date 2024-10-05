@@ -6,6 +6,7 @@ import { FaPlayCircle, FaQuestionCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 export default function KanbasNavigation() {
   return (
+
     <div id="wd-kanbas-navigation" style={{ width: 120 }} 
          className="list-group rounded-0 position-fixed
          bottom-0 top-0 d-none d-md-block bg-black z-2">

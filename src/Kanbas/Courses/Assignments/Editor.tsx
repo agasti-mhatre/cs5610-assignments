@@ -1,10 +1,18 @@
+import { useParams } from "react-router";
+import { assignments, courses } from "../../Database";
+import { Link } from "react-router-dom";
+
 export default function AssignmentEditor() {
+
+    const { cid, aid } = useParams();
+    const assignment = assignments.find((x) => x._id == aid);
+
     return (
       <div id="wd-assignments-editor">
 
         <div className="d-flex flex-column mb-3">
             <label htmlFor="wd-name">Assignment Name</label>
-            <input id="wd-name" value="A1" className="form-control"/>
+            <input id="wd-name" value={assignment ? assignment.title : ""} className="form-control"/>
         </div>
 
         <textarea id="wd-description" className="form-control mb-3">
@@ -111,8 +119,8 @@ export default function AssignmentEditor() {
             </div>
 
             <div className="ms-auto mt-3">
-                <button className="btn btn-secondary me-2">Cancel</button>
-                <button className="btn btn-danger me-2">Save</button>
+                <Link to={`/Kanbas/Courses/${cid}/Assignments`} className="btn btn-secondary me-2">Cancel</Link>
+                <Link to={`/Kanbas/Courses/${cid}/Assignments`} className="btn btn-danger me-2">Save</Link>
             </div>
         
         </div>

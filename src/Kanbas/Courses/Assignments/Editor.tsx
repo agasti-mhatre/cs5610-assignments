@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import { assignments, courses } from "../../Database";
+import { assignments } from "../../Database";
 import { Link } from "react-router-dom";
 
 export default function AssignmentEditor() {
